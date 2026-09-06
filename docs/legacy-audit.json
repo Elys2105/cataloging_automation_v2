@@ -1,0 +1,16 @@
+{
+  "legacy_file": "legacy/source/Form1.cs.txt",
+  "sha256": "ec9467dce6dab9b35b1c68372337bd2168d43454c958b7549a42428cbc7618a0",
+  "lines": 7015,
+  "characters": 262455,
+  "methods": 121,
+  "unique_methods": 119,
+  "thread_sleep_calls": 27,
+  "application_doevents_calls": 3,
+  "empty_catches": 22,
+  "catch_blocks": 65,
+  "javascript_execute_calls": 26,
+  "xpath_calls": 32,
+  "regex_calls": 211,
+  "reported_case_overrides": 19
+}

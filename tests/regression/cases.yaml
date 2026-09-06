@@ -1,0 +1,22 @@
+- id: 27-KH-DU
+  text: |
+    Số 27-KH/DU
+    KẾ HOẠCH
+    sắp xếp cán bộ, công chức, viên chức, người hoạt động không chuyên trách
+  expected:
+    document_number: "27"
+    symbol: "KH/ĐU"
+    document_type: "Kế hoạch"
+    abstract_contains: "người hoạt động không chuyên trách"
+
+- id: 36-KH-DU
+  text: |
+    Số 36-KH/ĐU
+    KẾ HOẠCH
+    tuyên truyền vận động sưu tầm chuyển giao hiến tặng tài liệu hiện vật
+    xây dựng Bảo tàng Đảng Cộng sản Việt Nam trên địa bàn phường Bình Tiên
+  expected:
+    document_number: "36"
+    symbol: "KH/ĐU"
+    document_type: "Kế hoạch"
+    abstract_contains: "Bảo tàng Đảng Cộng sản Việt Nam"

@@ -1,0 +1,113 @@
+﻿# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.coverage
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Runtime / cache / logs
+runtime/
+logs/
+log/
+cache/
+caches/
+tmp/
+temp/
+
+# Browser profiles / sessions
+profile/
+profiles/
+browser-profile/
+browser_profiles/
+*ChromeProfile*/
+*chrome-profile*/
+*browser-smoke-profile*/
+
+# Database / state
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.lock
+*.pid
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+config/local.yaml
+config/local.yml
+local.yaml
+local.yml
+credentials.json
+secrets.json
+token.json
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Build intermediates
+build/
+dist/
+__pyinstaller__/
+
+# Temporary patch/output
+patch-backups/
+patch-results/
+*_run/
+*_tmp/
+tmp_*/
+
+# release/ intentionally kept
+
+# ============================================================
+# Historical backups / generated release staging
+# ============================================================
+backups/
+release/stage/
+
+# Patch/runtime generated archives and extracted working dirs
+runtime/
+build/
+dist/
+
+# Never commit actual browser sessions
+**/User Data/
+**/Default/Cookies
+**/Default/Login Data
+**/Network/Cookies
+**/Local State
+
+
+# Historical project backups - keep locally, not GitHub
+backup/
+backup-*/
+backup-patch-*/
+backup-before-*/
+backup-0.*/
+backups/
+
+# Python package build metadata
+*.egg-info/
+src/*.egg-info/
+
+# Local collected parser archive
+parser-current.zip
+
+# Release staging
+release/stage/
+

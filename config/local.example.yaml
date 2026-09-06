@@ -1,0 +1,36 @@
+browser:
+  profile_dir: "%LOCALAPPDATA%/KhoLuuTruAutomationChromeProfile"
+  profile_dir_slot2: "%LOCALAPPDATA%/KhoLuuTruAutomationChromeProfile_Slot2"
+  headless: false
+  timeout_ms: 60000
+
+workflow:
+  max_attempts: 2
+  continue_after_record_error: true
+  auto_complete: true
+  dry_run: false
+
+ocr:
+  minimum_confidence: 0.82
+  device: "cpu"
+  enable_mkldnn: false
+  cpu_threads: 4
+  text_detection_model_name: "PP-OCRv5_mobile_det"
+  text_recognition_model_name: "latin_PP-OCRv5_mobile_rec"
+  use_doc_orientation_classify: false
+  use_doc_unwarping: false
+  use_textline_orientation: false
+  use_tesseract_fallback: true
+  tesseract_cmd: "C:/Program Files/Tesseract-OCR/tesseract.exe"
+  fallback_policy: "on_demand"
+  paddle_accept_score: 0.78
+  paddle_accept_vietnamese_quality: 0.62
+  tesseract_accept_score: 0.64
+  tesseract_max_variants: 2
+  reuse_ocr_cache: true
+
+parallel:
+  max_concurrent_jobs: 2
+  serialize_ocr: true
+  minimize_to_tray: true
+  clone_master_profile: true
