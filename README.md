@@ -46,9 +46,3 @@ Có thể kiểm tra môi trường trước khi chạy bằng:
 ```powershell
 python scripts/check_environment.py
 ```
-
-## Tác giả
-
-**Nguyễn Ngọc Bích Châu**  
-Sinh viên Công nghệ Thông tin - Chuyên ngành Công nghệ Phần mềm  
-GitHub: [Elys2105](https://github.com/Elys2105)
