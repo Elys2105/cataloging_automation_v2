@@ -1,38 +1,54 @@
-# Cataloging Automation V2
+# Công cụ tự động biên mục tài liệu
 
-Tool biên mục tự động theo luồng: mở hồ sơ → phát hiện PDF → đọc text/OCR → phân tích → điền form → xác minh.
+Ứng dụng hỗ trợ tự động hóa quy trình biên mục hồ sơ, tài liệu trên hệ thống web. Công cụ có thể phát hiện PDF, đọc nội dung bằng OCR, phân tích thông tin và hỗ trợ điền dữ liệu tự động.
 
-## Cài phần lõi
+## Chức năng chính
+
+- Tự động mở và xử lý hồ sơ trên hệ thống web
+- Phát hiện và đọc nội dung tài liệu PDF
+- Hỗ trợ OCR với PaddleOCR và Tesseract
+- Phân tích thông tin tài liệu để phục vụ biên mục
+- Tự động điền và kiểm tra dữ liệu trên biểu mẫu
+- Hỗ trợ xử lý nhiều hồ sơ với các profile trình duyệt độc lập
+- Lưu trạng thái xử lý và hỗ trợ tiếp tục công việc khi cần
+
+## Công nghệ sử dụng
+
+- Python
+- Playwright
+- PySide6
+- PaddleOCR
+- Tesseract OCR
+- OpenCV
+- PyMuPDF
+- SQLite
+- Pytest
+- PyInstaller
+
+## Cài đặt
 
 ```powershell
 py -3.11 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-pip install -e ".[dev]"
-```
-
-## Cài đầy đủ trên Windows
-
-```powershell
 pip install -e ".[full,dev]"
 playwright install chromium
 ```
 
-PaddlePaddle CPU/GPU cần được cài theo hướng dẫn chính thức phù hợp phần cứng trước khi chạy OCR.
+## Chạy ứng dụng
 
-## Kiểm tra môi trường
+```powershell
+cataloging-tool
+```
+
+Có thể kiểm tra môi trường trước khi chạy bằng:
 
 ```powershell
 python scripts/check_environment.py
 ```
 
+## Tác giả
 
-## Chạy nền và nhiều hồ sơ
-
-Từ 0.1.28, có thể thêm nhiều hồ sơ vào hàng đợi. Mặc định hai hồ sơ chạy song song bằng hai Chrome profile độc lập; OCR được khóa tuần tự để bảo vệ RAM và độ ổn định. Đóng cửa sổ khi còn job sẽ thu nhỏ tool xuống khay hệ thống.
-
-## Chạy
-
-```powershell
-cataloging-tool
-```
+**Nguyễn Ngọc Bích Châu**  
+Sinh viên Công nghệ Thông tin - Chuyên ngành Công nghệ Phần mềm  
+GitHub: [Elys2105](https://github.com/Elys2105)
